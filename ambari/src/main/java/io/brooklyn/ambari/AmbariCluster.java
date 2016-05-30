@@ -186,7 +186,7 @@ public interface AmbariCluster extends BasicStartable {
     /**
      * Returns the first Ambari server installed on the cluster. This is fine for now as we support only one server
      * for the entire hadoop cluster and therefore, this method will always return the same result.
-     * <p/>
+     * <br><br>
      * TODO: This however will need to be changed to properly handle a "cluster of server" once HA will be implemented
      *
      * @return the first Ambari server.
