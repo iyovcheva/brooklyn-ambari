@@ -83,7 +83,7 @@ import io.brooklyn.ambari.service.ExtraServiceException;
  * The minimum requirements for an ambari hadoop cluster.
  * These can be set in the provisioning properties of yaml or by
  * using machines of this spec in a byon cluster.
- * <p/>
+ * <p>  </p>
  * "minRam", 8192,
  * "osFamily", "ubuntu",
  * "osVersionRegex", "12.*",

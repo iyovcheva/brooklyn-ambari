@@ -33,7 +33,7 @@ import io.airlift.command.Option;
 /**
  * This class provides a static main entry point for launching a custom Brooklyn-based app.
  * <p>
- * It inherits the standard Brooklyn CLI options from {@link brooklyn.cli.Main}, plus adds a few more shortcuts for
+ * It inherits the standard Brooklyn CLI options from {@link org.apache.brooklyn.cli.Main}, plus adds a few more shortcuts for
  * favourite blueprints to the {@link LaunchCommand}.
  */
 public class AmbariMain extends Main {

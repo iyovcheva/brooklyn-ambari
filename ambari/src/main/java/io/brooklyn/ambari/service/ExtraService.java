@@ -41,9 +41,9 @@ import io.brooklyn.ambari.AmbariCluster;
  * Defines an "extra service" for the Hadoop cluster. An entity implementing this interface will be assured to be called
  * at two particular times within the Ambari lifecycle:
  * <ul>
- *     <ol>{@link ExtraService#preClusterDeploy(AmbariCluster)} will be call once all the Ambari agents and servers have
- *     been installed, just before deploying a new hadoop cluster.</ol>
- *     <ol>{@link ExtraService#postClusterDeploy(AmbariCluster)} once the hadoop cluster has been deployed.</ol>
+ *     <li>{@link ExtraService#preClusterDeploy(AmbariCluster)} will be call once all the Ambari agents and servers have
+ *     been installed, just before deploying a new hadoop cluster.</li>
+ *     <li>{@link ExtraService#postClusterDeploy(AmbariCluster)} once the hadoop cluster has been deployed.</li>
  * </ul>
  */
 public interface ExtraService extends BasicStartable {
@@ -104,7 +104,7 @@ public interface ExtraService extends BasicStartable {
                     "component should be installed on the bound hostgroup.");
 
     /**
-     * Returns the list of mapping <component-name> <--> <host-group-name> for this extra service.
+     * Returns the list of mapping {@literal <}component-name{@literal >} {@literal <}--{@literal >} {@literal <}host-group-name{@literal >} for this extra service.
      *
      * @return a list of mapping.
      */
